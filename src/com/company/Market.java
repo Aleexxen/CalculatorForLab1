@@ -11,7 +11,7 @@ public class Market {
 
     public static void main(String[] args) throws IOException {
         List<Integer> input = new ArrayList<>();
-        try (BufferedReader reader = new BufferedReader(new FileReader("./src/com/company/input2.txt"))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader("./src/com/company/input1.txt"))) {
             String line;
             while ((line = reader.readLine()) != null) {
                 input.add(Integer.parseInt(line));
@@ -57,6 +57,9 @@ public class Market {
         if (result != null) {
             System.out.println(result);
         }
+
+        DoSmth Finish = new DoSmth();
+        Finish.printCommited();
 
     }
 
