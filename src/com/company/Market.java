@@ -48,10 +48,10 @@ public class Market {
             result = calculator.times(drobs.get(left), drobs.get(right));
         } else if (op.equals("/")) {
             result = calculator.divide(drobs.get(left), drobs.get(right));
-        } else if (op.equals("+*2")) {
-            result = calculator.sumTwice(drobs.get(left), drobs.get(right));
+        } else if (op.equals("+/2")) {
+            result = calculator.sumTwiceDiv(drobs.get(left), drobs.get(right));
         } else {
-            System.out.println("Only `+`, `-`, `*`, `/`, `+*2` operations are supported");
+            System.out.println("Only `+`, `-`, `*`, `/`, `+*2`, `+/2` operations are supported");
         }
 
         if (result != null) {
