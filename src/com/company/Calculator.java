@@ -28,4 +28,13 @@ public class Calculator {
 
         return new Drob(numerator, denominator);
     }
+
+    public Drob sumTwice(Drob first, Drob second) {
+        int numerator = first.getNumerator() * second.getDenominator() + second.getNumerator() * first.getDenominator();
+        int denominator = first.getDenominator() * second.getDenominator();
+
+        numerator = numerator * 2;
+
+        return new Drob(numerator, denominator);
+    }
 }
